@@ -206,6 +206,9 @@ persist.vendor.radio.rat_on=combine
 persist.vendor.radio.redir_party_num=1
 persist.vendor.radio.report_codec=1
 
+# Skia
+renderthread.skia.reduceopstasksplitting=true
+
 # Soc
 ro.soc.manufacturer=Qualcomm
 
