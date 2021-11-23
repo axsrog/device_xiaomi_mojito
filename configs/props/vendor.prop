@@ -117,15 +117,9 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 # Data modules
 ro.telephony.iwlan_operation_mode=legacy
 
-# Dex2oat
-dalvik.vm.dex2oat-filter=speed
-dalvik.vm.dex2oat-threads=8
-dalvik.vm.dex2oat64.enabled=true
-dalvik.vm.image-dex2oat-filter=speed
-dalvik.vm.image-dex2oat-threads=8
-pm.dexopt.boot=verify
-pm.dexopt.first-boot=verify
-pm.dexopt.install=speed-profile
+# Dexopt
+pm.dexopt.first-boot=quicken
+pm.dexopt.bg-dexopt=everything
 
 # DPM
 persist.vendor.dpm.feature=1
