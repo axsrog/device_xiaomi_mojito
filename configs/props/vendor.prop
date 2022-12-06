@@ -256,3 +256,6 @@ wifi.aware.interface=wifi-aware0
 
 # WLAN
 persist.vendor.data.iwlan.enable=true
+
+# Zygote
+zygote.critical_window.minute=10
