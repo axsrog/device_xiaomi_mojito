@@ -14,19 +14,18 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # Inherit from mojito device
 $(call inherit-product, device/xiaomi/mojito/device.mk)
 
-# Inherit some common PixelExperience stuff
-TARGET_USES_AOSP_RECOVERY := true
+# Inherit some common Proton stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+PROTON_BUILD_VARIANT := OFFICIAL
+$(call inherit-product, vendor/proton/config/common.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_mojito
+PRODUCT_NAME := mojito
 PRODUCT_DEVICE := mojito
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 10
