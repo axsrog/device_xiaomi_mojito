@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/mojito.mk
+    $(LOCAL_DIR)/aosp_mojito.mk
