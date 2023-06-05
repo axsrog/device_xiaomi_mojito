@@ -75,8 +75,7 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libvolumelistener \
-    libtinycompress \
-    libtinycompress.vendor
+    libtinycompress 
 
 # Audio XML
 PRODUCT_COPY_FILES += \
