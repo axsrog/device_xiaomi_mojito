@@ -158,7 +158,6 @@ USE_DEX2OAT_DEBUG := false
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.4-impl \
     android.hardware.graphics.composer@2.4-service \
     android.hardware.graphics.composer@2.2-resources.vendor \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
