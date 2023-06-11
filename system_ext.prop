@@ -1,0 +1,6 @@
+persist.sys.gps.fence=true
+persist.sys.gps.polaris=true
+persist.sys.usb.config=none
+persist.vendor.dpm.feature=11
+ro.telephony.sim_slots.count=2
+telephony.active_modems.max_count=2
