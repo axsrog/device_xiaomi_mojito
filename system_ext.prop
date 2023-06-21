@@ -1,8 +1,26 @@
+# Audio
+audio.offload.buffer.size.kb=32
+audio.offload.gapless.enabled=true
+persist.audio.fluence.speaker=true
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=false
+ro.qc.sdk.audio.fluencetype=none
+ro.qc.sdk.audio.ssr=false
+tunnel.audio.encode=true
+use.voice.path.for.pcm.voip=true
+
 # CNE
 persist.vendor.cne.feature=1
 
+# Display
+dev.pm.dyn_samplingrate=1
+ro.display.type=oled
+
 # DPM
 persist.vendor.dpm.feature=11
+
+# FUSE
+persist.fuse_sdcard=true
 
 # IMS
 persist.vendor.ims.disableADBLogs=1
@@ -11,6 +29,7 @@ persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableQXDMLogs=1
 
 # Media
+av.offload.enable=true
 mmp.enable.3g2=true
 persist.mm.enable.prefetch=true
 media.aac_51_output_enabled=true
@@ -21,3 +40,11 @@ media.stagefright.enable-scan=true
 media.stagefright.enable-player=true
 media.stagefright.enable-fma2dp=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+qcom.hw.aac.encoder=true
+
+# Time Service
+persist.timed.enable=true
+
+# WFD
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0

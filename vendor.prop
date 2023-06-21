@@ -11,6 +11,7 @@ persist.vendor.audio.fluence.voicerec=false
 persist.vendor.audio.ras.enabled=false
 persist.vendor.audio.spv3.enable=true
 ro.vendor.audio.soundfx.usb=true
+ro.vendor.audio.us.proximity=true
 ro.vendor.audio.afe.record=true
 vendor.audio.adm.buffering.ms=2
 ro.vendor.audio.sdk.fluencetype=none
@@ -97,7 +98,9 @@ bluetooth.profile.pbap.server.enabled?=true
 bluetooth.profile.sap.server.enabled?=true
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 persist.bluetooth.a2dp_offload.disabled=false
+persist.vendor.bt.a2dp.mac_whitelist=false
 persist.vendor.bt.aac_frm_ctl.enabled=true
+persist.vendor.btsatck.absvolfeature=true
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
 persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.enable.splita2dp=true
@@ -110,6 +113,9 @@ vendor.qcom.bluetooth.soc=cherokee
 # Camera
 camera.disable_zsl_mode=1
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
+
+# Charge
+persist.vendor.quick.charge=1
 
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
@@ -156,6 +162,10 @@ ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.max_virtual_display_dimension=4096
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
+ro.vendor.display.sensortype=2
+ro.vendor.display.svi=1
+ro.vendor.display.type=oled
+sys.displayfeature_hidl=true
 vendor.display.comp_mask=0
 vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0
 vendor.display.disable_excl_rect_partial_fb=1
@@ -191,6 +201,10 @@ debug.media.codec2=2
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=512
 
+# Netmgr
+persist.vendor.data.mode=concurrent
+ro.vendor.use_data_netmgrd=true
+
 # Perf
 ro.vendor.perf-hal.ver=2.2
 .power.pasr.enabled=true
@@ -198,11 +212,15 @@ ro.vendor.qspm.enable=true
 vendor.pasr.activemode.enabled=true
 ro.vendor.extension_library=libqti-perfd-client.so
 
+# QCA1530 detection
+sys.qca1530=detect
+
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 
 # Radio
 persist.vendor.radio.custom_ecc=1
+persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.data_ltd_sys_ind=1
 persist.vendor.radio.dynamic_sar=1
 persist.vendor.radio.force_ltd_sys_ind=1
@@ -213,9 +231,14 @@ persist.vendor.radio.rat_on=combine
 persist.vendor.radio.redir_party_num=1
 persist.vendor.radio.report_codec=1
 persist.vendor.radio.enable_temp_dds=true
+persist.vendor.radio.snapshot_enabled=1
+persist.vendor.radio.snapshot_timer=5
 
 # Soc
 ro.soc.manufacturer=Qualcomm
+
+# Thermal
+vendor.sys.thermal.data.path=/data/vendor/thermal
 
 # USB
 vendor.usb.diag.func.name=diag
@@ -233,3 +256,6 @@ ro.config.vc_call_vol_steps=10
 
 # WiFi
 wifi.aware.interface=wifi-aware0
+
+# WLAN
+persist.vendor.data.iwlan.enable=true
