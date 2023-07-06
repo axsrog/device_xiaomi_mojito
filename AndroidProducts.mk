@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/statix_sunny.mk
+    $(LOCAL_DIR)/sunny.mk
