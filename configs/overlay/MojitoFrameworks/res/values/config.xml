@@ -671,4 +671,7 @@
         <item>org.lineageos.aperture.dev</item>
     </string-array>
 
+    <!-- Whether device supports increased touch sensitvity -->
+    <bool name="config_supportGloveMode">true</bool>
+
 </resources>
